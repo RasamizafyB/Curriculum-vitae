@@ -150,7 +150,7 @@ img {
 
  @media only screen and (max-width: 850px){
     body {
-       margin: 0px 5% 0px 0px;
+       margin: 0px;
        padding: 0px;
        border: none;
        border-radius: none;
@@ -159,8 +159,12 @@ img {
 
     .mise-en-page{
       margin: 0px;
-      padding: 0% 5% 0% 0%;
+      padding: 0%;
       background-image: none;
+    }
       
+    p.adresse{
+       width: auto;
+    }
 
  }
