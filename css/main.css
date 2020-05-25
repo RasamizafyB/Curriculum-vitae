@@ -145,26 +145,43 @@ img {
 
       .photo{
          text-align: center;
+         grid-area: photo;
       }
  }
 
  @media only screen and (max-width: 850px){
-    body {
+   body {
        margin: 0px;
        padding: 0px;
        border: none;
        border-radius: none;
        box-shadow: none;
-    }
+   }
 
-    .mise-en-page{
+   .wrapper{
+      grid-template-columns: 1fr;
+      grid-template-rows: 500px 300px 650px 550px 700px 400px;
+      grid-template-areas: 
+           "photo"
+           "coordonner"
+           "parcours"
+           "experience-pro"
+           "compétence"
+           "loisirs";
+   }
+
+   .mise-en-page{
       margin: 0px;
       padding: 0%;
       background-image: none;
-    }
-      
-    p.adresse{
+   }
+
+   .photo{
+      grid-area: photo;
+   }
+
+   p.adresse{
        width: auto;
-    }
+   }
 
  }
